@@ -1,0 +1,23 @@
+<div class="login-container">
+    <img src="assets/images/film.png" alt="" class="film">
+    <div class="logo">Movie Finder</div>
+    <div class="desc">If you are trying to find nice movies to watch, you found the right place. Read reviews from our users and also give your own review. Is there a nicer way to find a movie? I DON'T THINK SO
+    </div>
+
+    <div class="login-form">
+        <div class="form-group">
+            <label class="uname">Username</label>
+            <input type="text" name="uname" class="form-control" [(ngModel)]="username"/>
+        </div>
+
+        <div class="form-group">
+            <label class="pword">Password</label>
+            <input type="password" name="pword" class="form-control" [(ngModel)]="password"/>
+        </div>
+
+        <div class="btn-container">
+            <div class="error"> {{ errorMsg }} </div>
+            <button class="btn btn-dark" (keydown.enter)="login()" (click)="login()">Login</button>
+        </div>
+    </div>
+</div>
